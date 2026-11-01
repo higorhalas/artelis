@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noel e Néllis · Receita de crochê da Elis · ArtElis</title>
+<meta name="description" content="Receita em PDF do casal de Natal da Elis em crochê: Noel e Néllis, 53 cm, 42 páginas, 48 fotos e 2 vídeos de apoio. Pode vender os bonecos que fizer.">
+<meta property="og:title" content="Noel e Néllis · Receita de crochê da Elis">
+<meta property="og:description" content="O casal de Natal da Elis em crochê, agora em receita pra você fazer na sua casa.">
+<meta name="theme-color" content="#FFFBF3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --papel:#FFFBF3; --branco:#FFFFFF;
+  --tinta:#1A2620; --suave:#5A675E;
+  --verde:#24402F; --vermelho:#A8323F; --vermelho-escuro:#8C2734;
+  --salvia:#EFF2EA; --linha:#C6CFC0; --tracejado:#AAB6A4;
+  --creme:#FFF6E0; --dourado:#D9A441; --dourado-escuro:#7A5B14;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Karla","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--papel);color:var(--tinta);font:400 17px/1.65 var(--sans)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:560px;margin:0 auto;padding:0 20px}
+h1,h2,h3{margin:0;font-family:var(--serif);font-weight:400;color:var(--verde)}
+h2{font-size:clamp(29px,7.6vw,40px);line-height:1.12;letter-spacing:-.015em;text-wrap:balance;margin-bottom:16px}
+h3{font-size:21px;line-height:1.25;font-weight:600;margin-bottom:6px}
+p{margin:0 0 14px}
+b,strong{font-weight:700}
+.micro{font:700 12px/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--dourado-escuro);margin-bottom:10px}
+section{padding:56px 0}
+/* linha tracejada entre secoes, lembra ponto de costura */
+.costura{border-top:2px dashed var(--tracejado)}
+.faixa{background:var(--salvia)}
+
+/* topo */
+.topo{padding:16px 0}
+.topo__in{display:flex;align-items:center;justify-content:space-between}
+.marca{font:600 22px/1 var(--serif);color:var(--verde);letter-spacing:-.01em}
+.topo a{font-size:15px;color:var(--suave);text-decoration:none}
+
+/* hero */
+.hero{padding:20px 0 56px}
+.hero h1{font-size:clamp(50px,14.5vw,84px);line-height:1;letter-spacing:-.025em}
+.hero__lead{font:italic 400 21px/1.4 var(--serif);color:var(--tinta);margin:14px 0 0}
+.numeros{list-style:none;padding:0;margin:4px 0 22px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.numeros li{background:var(--branco);border:1px solid var(--linha);border-radius:14px;padding:12px 14px;line-height:1.2}
+.numeros b{display:block;font:600 26px/1.1 var(--serif);color:var(--verde);font-variant-numeric:tabular-nums}
+.numeros span{font-size:14px;color:var(--suave)}
+@media(min-width:480px){.numeros{grid-template-columns:repeat(4,1fr)}}
+
+/* botao: o unico preenchimento solido de vermelho da pagina */
+.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:58px;padding:16px 24px;border-radius:999px;
+  background:var(--vermelho);color:#fff;font:700 18px/1.2 var(--sans);text-decoration:none;text-align:center;
+  box-shadow:0 10px 24px rgba(168,50,63,.25);transition:background .2s,transform .2s}
+.btn:hover{background:var(--vermelho-escuro);transform:translateY(-1px)}
+.btn:focus-visible{outline:3px solid var(--dourado);outline-offset:3px}
+.btn__nota{text-align:center;font-size:14px;color:var(--suave);margin:10px 0 0}
+.costura-cta{margin-top:30px}
+
+/* fotos */
+.foto{margin:24px 0}
+.foto img{width:100%;border-radius:18px;box-shadow:0 14px 34px rgba(36,64,47,.16)}
+.foto figcaption{font-size:14px;line-height:1.5;color:var(--suave);margin-top:10px}
+
+/* lista com check */
+.lista{list-style:none;padding:0;margin:20px 0 0}
+.lista li{position:relative;padding:0 0 18px 42px}
+.lista li::before{content:"";position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;background:var(--branco);border:1.5px solid var(--linha)}
+.lista li::after{content:"";position:absolute;left:10px;top:7px;width:7px;height:12px;border:solid var(--verde);border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.lista--curta li{padding-bottom:12px}
+
+/* diferenciais */
+.cards{display:grid;gap:14px;margin-top:24px}
+.card{background:var(--branco);border:1px solid var(--linha);border-radius:18px;padding:22px 20px}
+.card p{margin:0}
+.card__n{font:600 15px/1 var(--serif);color:var(--dourado-escuro);margin-bottom:10px}
+.card q{font-style:italic}
+
+/* destaque com borda, sem preencher de vermelho */
+.destaque{border-left:4px solid var(--vermelho);background:var(--branco);border-radius:0 14px 14px 0;padding:14px 18px;margin:18px 0}
+.destaque p{margin:0}
+.pequeno{font-size:15px;color:var(--suave)}
+.nw{white-space:nowrap}
+
+/* nivel */
+.nivel{display:grid;gap:14px;margin-top:22px}
+.nivel__col{border:1px solid var(--linha);border-radius:18px;padding:20px;background:var(--branco)}
+.nivel__col h3{font-size:19px}
+.nivel__col ul{list-style:none;padding:0;margin:10px 0 0}
+.nivel__col li{position:relative;padding:0 0 10px 26px;line-height:1.5}
+.nivel__col li::before{position:absolute;left:0;top:0;font-weight:700}
+.nivel__sim li::before{content:"✓";color:var(--verde)}
+.nivel__nao{background:transparent;border-style:dashed;border-color:var(--tracejado)}
+.nivel__nao h3{color:var(--suave)}
+.nivel__nao li{color:var(--suave)}
+.nivel__nao li::before{content:"×";color:var(--suave);font-size:19px;line-height:1.2}
+
+/* elis */
+.assinatura{font:italic 400 24px/1.2 var(--serif);color:var(--verde);margin-top:18px}
+
+/* oferta */
+#oferta{scroll-margin-top:16px}
+.oferta__card{background:var(--branco);border:2px solid var(--verde);border-radius:24px;padding:28px 22px;box-shadow:0 18px 40px rgba(36,64,47,.12)}
+.oferta__card h2{margin-bottom:6px}
+.preco{text-align:center;padding:20px 16px 18px;margin:22px 0 18px;border-top:2px dashed var(--tracejado);border-bottom:2px dashed var(--tracejado)}
+.preco__valor{display:flex;align-items:baseline;justify-content:center;gap:6px;margin:0;color:var(--verde);font-family:var(--serif);line-height:1}
+.preco__cur{font-size:26px}
+.preco__int{font-size:76px;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.preco__sub{margin:8px 0 0;font-size:16px;color:var(--suave)}
+
+/* preco de referencia do boneco: numero em destaque, sem preencher de vermelho */
+.ref{text-align:center;background:var(--salvia);border:1px solid var(--linha);border-radius:18px;padding:20px 18px;margin:18px 0}
+.ref__rot{font:700 12px/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--dourado-escuro);margin:0}
+.ref__valor{display:flex;align-items:baseline;justify-content:center;gap:5px;margin:8px 0 10px;font:400 52px/1 var(--serif);color:var(--verde);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.ref__valor span{font-size:22px}
+.ref__nota{font-size:14px;line-height:1.5;color:var(--suave);margin:0}
+.compra{font-size:15px;color:var(--suave);text-align:center;margin:14px 0 0}
+.garantia{display:flex;gap:14px;align-items:center;margin-top:22px;padding:16px;background:var(--salvia);border-radius:14px}
+.garantia__selo{flex:0 0 54px;height:54px;border-radius:50%;border:2px solid var(--dourado-escuro);display:grid;place-items:center;font:600 22px/1 var(--serif);color:var(--dourado-escuro)}
+.garantia p{margin:4px 0 0;font-size:15px;line-height:1.5;color:var(--tinta)}
+.garantia .garantia__tit{margin:0;font:600 17px/1.3 var(--serif);color:var(--verde)}
+
+/* faq: details nativo, abrir um fecha o outro */
+.faq{border-top:1px solid var(--linha);margin-top:20px}
+.faq details{border-bottom:1px solid var(--linha)}
+.faq summary{display:grid;grid-template-columns:minmax(0,1fr) 30px;align-items:center;gap:14px;padding:18px 0;cursor:pointer;list-style:none;
+  font:600 18px/1.35 var(--serif);color:var(--verde);-webkit-tap-highlight-color:transparent}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::marker{content:""}
+.faq summary:focus-visible{outline:2px solid var(--dourado);outline-offset:4px}
+.faq__t{position:relative;width:30px;height:30px;border:1.5px solid var(--linha);border-radius:50%}
+.faq__t::before,.faq__t::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;background:var(--verde);transform:translate(-50%,-50%)}
+.faq__t::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .2s,opacity .2s}
+.faq details[open] .faq__t::after{transform:translate(-50%,-50%);opacity:0}
+.faq details > div{padding:0 0 18px}
+.faq details > div p{margin:0;color:var(--tinta)}
+
+/* rodape */
+footer{padding:30px 0 40px;text-align:center;font-size:14px;color:var(--suave)}
+footer p{margin:0 0 6px}
+
+@media(min-width:768px){
+  body{font-size:18px}
+  section{padding:72px 0}
+  .wrap{max-width:620px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap topo__in">
+    <span class="marca">ArtElis</span>
+    <a href="https://www.instagram.com/arte.lis72/" rel="noopener">@arte.lis72</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="micro">Receita de amigurumi em PDF · Natal</p>
+    <h1>Noel e Néllis</h1>
+    <p class="hero__lead">O casal de Natal que eu faço em crochê, agora em receita pra você fazer aí na sua casa.</p>
+    <figure class="foto">
+      <img src="elis-com-noel-e-nellis.webp" width="900" height="1200" fetchpriority="high"
+           alt="A Elis abraçando os dois bonecos de crochê, o Papai Noel e a Néllis, num sofá de couro marrom">
+    </figure>
+    <ul class="numeros">
+      <li><b>53 cm</b><span>de altura</span></li>
+      <li><b>42</b><span>páginas</span></li>
+      <li><b>48</b><span>fotos de apoio</span></li>
+      <li><b>2</b><span>vídeos de apoio</span></li>
+    </ul>
+    <p>Uma receita só faz os dois bonecos, o Papai Noel e a Néllis. Carreira por carreira, com as fotos das etapas e vídeo pras partes que a mão aprende vendo.</p>
+    <a class="btn" href="#oferta">Quero a receita</a>
+    <p class="btn__nota">Receita em PDF · nível intermediário</p>
+  </div>
+</section>
+
+<section class="faixa">
+  <div class="wrap">
+    <p class="micro">Foto de verdade</p>
+    <h2>Os bonecos da foto são os meus</h2>
+    <p>Esses são o Noel e a Néllis que eu fiz, fotografados de verdade, sem montagem. A receita é o passo a passo até eles.</p>
+    <figure class="foto">
+      <img src="noel-e-nellis-no-sofa.webp" width="900" height="900" loading="lazy" decoding="async"
+           alt="O Papai Noel e a Néllis de crochê sentados lado a lado num sofá, com roupa vermelha e manga listrada">
+    </figure>
+    <figure class="foto">
+      <img src="rostos-de-perto.webp" width="960" height="640" loading="lazy" decoding="async"
+           alt="Os rostos do Papai Noel e da Néllis de perto, com óculos, olhos azuis e a flor vermelha no cabelo dela">
+      <figcaption>De perto: os olhos de 20 mm com trava de segurança, a barba de fio Mollet e a flor da Néllis.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="micro">O que vem na receita</p>
+    <h2>Tudo pra fazer os dois, do começo ao fim</h2>
+    <ul class="lista">
+      <li><b>Os dois bonecos numa receita só.</b> Pernas, sapatos, braços, corpo e pescoço são iguais nos dois. O rosto, o cabelo e a roupa de cada um têm a sua própria seção.</li>
+      <li><b>42 páginas e 48 fotos de apoio.</b> As fotos mostram as etapas, pra você comparar o seu trabalho com o meu antes de seguir.</li>
+      <li><b>2 vídeos de apoio.</b> Um pra cada boneco, mostrando a expressão do rosto, a barba, os cílios e o cabelo, que são as partes que a mão aprende vendo. O QR code fica na própria receita.</li>
+      <li><b>Lista de materiais pronta.</b> Os fios da Círculo com a cor e a quantidade de cada um, mais agulha, olhos e o resto. É só levar pro armarinho.</li>
+      <li><b>A roupa dos dois.</b> Jardineira e gorro do Noel e saia da Néllis, em crochê. E, se preferir tecido, os moldes do vestido e da bermuda, com todas as medidas.</li>
+      <li><b>Ajuda no direct.</b> Travou em alguma parte? Me manda uma foto de onde parou no @arte.lis72.</li>
+    </ul>
+    <a class="btn costura-cta" href="#oferta">Quero a receita</a>
+  </div>
+</section>
+
+<section class="faixa costura">
+  <div class="wrap">
+    <p class="micro">O que eu aprendi fazendo</p>
+    <h2>Os cuidados que fazem o boneco ficar bonito por muito tempo</h2>
+    <div class="cards">
+      <div class="card">
+        <p class="card__n">01</p>
+        <h3>A cabeça que não tomba</h3>
+        <p>Em boneco grande, a fibra acomoda com o tempo e a cabeça cai pra frente. Por isso o pescoço leva um saquinho de tricoline cheio de fibra, que segura a cabeça por dentro, como uma coluna. A receita ensina a fazer e a ajustar ao seu ponto.</p>
+      </div>
+      <div class="card">
+        <p class="card__n">02</p>
+        <h3>A sola com base rígida</h3>
+        <p>Uma base de plástico rígido ou papelão firme, colada por dentro da sola, segura o formato do pé. A própria sola de crochê vira o molde: é só contornar e recortar.</p>
+      </div>
+      <div class="card">
+        <p class="card__n">03</p>
+        <h3>O porquê de cada passo</h3>
+        <p><q>Encha o sapato antes de subir a perna, porque depois a boca fica estreita demais.</q> A receita inteira é assim: o que fazer e por que fazer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="micro">Renda extra no Natal</p>
+    <h2>Pode fazer pra vender</h2>
+    <figure class="foto">
+      <img src="casal-na-poltrona.webp" width="800" height="800" loading="lazy" decoding="async"
+           alt="O Papai Noel e a Néllis de crochê sentados numa poltrona perto da janela">
+    </figure>
+    <p>Os bonecos que você fizer com esta receita, pode vender. Quantos quiser, na feira, no WhatsApp ou na internet. Só peço que você escreva <b>"Receita: ArtElis"</b> nos anúncios e nas fotos.</p>
+    <div class="ref">
+      <p class="ref__rot">Preço de referência por boneco pronto</p>
+      <p class="ref__valor"><span>R$</span>397</p>
+      <p class="ref__nota">É uma referência, não uma promessa: quanto cobrar é decisão sua e depende de onde e pra quem você vende.</p>
+    </div>
+    <div class="destaque">
+      <p>Pra quem quer uma renda extra no Natal, vale começar cedo: boneco de Natal tem data pra ficar pronto.</p>
+    </div>
+    <p class="pequeno">O que não pode: repassar, revender, imprimir pra outras pessoas, traduzir ou publicar a receita. Você compra o direito de fazer os bonecos, não de revender o PDF.</p>
+    <a class="btn costura-cta" href="#oferta">Quero a receita</a>
+  </div>
+</section>
+
+<section class="faixa costura">
+  <div class="wrap">
+    <p class="micro">Antes de comprar</p>
+    <h2>Receita de nível intermediário</h2>
+    <p>Ela foi feita pra quem já tem afinidade com o crochê. Confira o que ela ensina e o que fica de fora:</p>
+    <div class="nivel">
+      <div class="nivel__col nivel__sim">
+        <h3>O que a receita ensina</h3>
+        <ul>
+          <li>a fazer os dois bonecos, carreira por carreira, até a montagem</li>
+          <li>o rosto, a barba e o cabelo de cada um, com vídeo</li>
+          <li>a roupa de crochê e os moldes da roupa de tecido</li>
+          <li>o pescoço firme e a sola com base rígida</li>
+        </ul>
+      </div>
+      <div class="nivel__col nivel__nao">
+        <h3>O que ela não ensina</h3>
+        <ul>
+          <li>os pontos básicos: anel mágico, ponto baixo, aumento e diminuição</li>
+          <li>os óculos de arame e a flor, que são opcionais: pra eles, tem vídeo pronto no YouTube</li>
+        </ul>
+      </div>
+    </div>
+    <p class="pequeno" style="margin-top:16px">Se faltar algum ponto básico, um vídeo de iniciante no YouTube resolve antes de começar.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="micro">Quem fez</p>
+    <h2>Prazer, eu sou a Elis</h2>
+    <figure class="foto">
+      <img src="elis-e-o-noel.webp" width="800" height="1000" loading="lazy" decoding="async"
+           alt="A Elis encostando a testa na cabeça do Papai Noel de crochê, com carinho">
+    </figure>
+    <p>O Noel e a Néllis são o meu casal de Natal. Escrevi a receita como se você estivesse aqui do meu lado: o passo, a foto e o porquê de cada coisa.</p>
+    <p>E se travar no meio do caminho, me chama no direct com uma foto de onde você parou. Com a foto eu entendo a sua dúvida e consigo te orientar direitinho. Receita minha não abandona ninguém no meio da carreira 14.</p>
+    <p class="assinatura">Com carinho, Elis</p>
+  </div>
+</section>
+
+<section class="faixa costura" id="oferta">
+  <div class="wrap">
+    <div class="oferta__card">
+      <p class="micro">A receita</p>
+      <h2>Noel e Néllis em PDF</h2>
+      <ul class="lista lista--curta">
+        <li>Receita completa dos dois bonecos, em 42 páginas</li>
+        <li>48 fotos de apoio e 2 vídeos</li>
+        <li>Roupa de crochê e moldes da roupa de tecido</li>
+        <li>Licença pra vender os bonecos que você fizer</li>
+        <li>Ajuda no direct quando travar</li>
+      </ul>
+
+      <div class="preco">
+        <p class="preco__valor"><span class="preco__cur">R$</span><span class="preco__int">79</span></p>
+        <p class="preco__sub">à vista</p>
+      </div>
+
+      <a class="btn" href="https://pay.hotmart.com/W108281145I">Comprar a receita</a>
+      <p class="compra">Pagamento no Pix ou no cartão pela Hotmart. Assim que o pagamento é aprovado, o acesso ao PDF chega no seu <span class="nw">e-mail</span>.</p>
+
+      <div class="garantia">
+        <span class="garantia__selo">7</span>
+        <div>
+          <p class="garantia__tit">Garantia de 7 dias</p>
+          <p>Se a receita não for o que você esperava, você pede o reembolso pela própria Hotmart.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="micro">Perguntas</p>
+    <h2>Ficou alguma dúvida?</h2>
+    <div class="faq">
+      <details name="faq" open>
+        <summary>Serve pra quem está começando no crochê?<span class="faq__t" aria-hidden="true"></span></summary>
+        <div><p>Ela é de nível intermediário. A receita não ensina os pontos básicos (anel mágico, ponto baixo, aumento e diminuição). Se faltar algum, um vídeo de iniciante no YouTube resolve antes de começar.</p></div>
+      </details>
+      <details name="faq">
+        <summary>Que fios e agulha eu uso?<span class="faq__t" aria-hidden="true"></span></summary>
+        <div><p>Fios da Círculo, com a cor e a quantidade de cada um na lista de materiais: Chenille em macadâmia, vermelho e branco, Craft na sola, Lã Crush e Fio Mollet no cabelo e na barba. A agulha é de 4,5 a 5,0 mm; eu uso uma de 5,00 mm. Você acha tudo em loja de fios ou armarinho.</p></div>
+      </details>
+      <details name="faq">
+        <summary>O meu boneco vai ficar com 53 cm?<span class="faq__t" aria-hidden="true"></span></summary>
+        <div><p>Os 53 cm são do meu boneco. O tamanho final depende da sua mão: quem faz o ponto mais solto chega num boneco maior, que gasta mais fio. Por isso a lista de materiais já vem com folga.</p></div>
+      </details>
+      <details name="faq">
+        <summary>Quanto tempo leva?<span class="faq__t" aria-hidden="true"></span></summary>
+        <div><p>A receita pede cerca de 8 horas de trabalho. Cada mão tem o seu ritmo, e tudo bem.</p></div>
+      </details>
+      <details name="faq">
+        <summary>Posso vender os bonecos que eu fizer?<span class="faq__t" aria-hidden="true"></span></summary>
+        <div><p>Pode, quantos quiser. Só escreva "Receita: ArtElis" nos anúncios e nas fotos. O preço de referência é R$ 397 por boneco pronto, mas quanto cobrar é decisão sua. O que não pode é repassar ou revender a receita.</p></div>
+      </details>
+      <details name="faq">
+        <summary>Como eu recebo a receita?<span class="faq__t" aria-hidden="true"></span></summary>
+        <div><p>Assim que o pagamento é aprovado, a Hotmart manda no seu <span class="nw">e-mail</span> o acesso pra baixar o PDF. Dá pra seguir pelo celular ou imprimir pra você usar.</p></div>
+      </details>
+      <details name="faq">
+        <summary>E se eu travar no meio?<span class="faq__t" aria-hidden="true"></span></summary>
+        <div><p>Me chama no direct do <a href="https://ig.me/m/arte.lis72" rel="noopener">@arte.lis72</a> com uma foto de onde parou. Com a foto eu entendo melhor e consigo te orientar.</p></div>
+      </details>
+      <details name="faq">
+        <summary>A receita é a mesma pros dois bonecos?<span class="faq__t" aria-hidden="true"></span></summary>
+        <div><p>É. Pernas, sapatos, mãos, braços, corpo e pescoço são iguais nos dois, carreira por carreira. O que muda é o rosto, o cabelo e a roupa, e cada boneco tem a sua seção.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="faixa costura">
+  <div class="wrap">
+    <h2>Vem fazer comigo</h2>
+    <p>Separa o fio, pega a agulha e vem. O resto eu te mostro, carreira por carreira.</p>
+    <a class="btn costura-cta" href="#oferta">Quero a receita</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>ArtElis</b> · Receita Noel e Néllis</p>
+    <p><a href="https://www.instagram.com/arte.lis72/" rel="noopener">@arte.lis72</a> · © 2026 ArtElis</p>
+  </div>
+</footer>
+
+</body>
+</html>
